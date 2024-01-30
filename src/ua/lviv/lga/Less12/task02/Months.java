@@ -1,21 +1,36 @@
 package ua.lviv.lga.Less12.task02;
 
-public enum Months {
-    JANUARY(Sesons.WINTER, 31),
-    FEBRUARY(Sesons.WINTER, 28),
-    MARCH(Sesons.SPRING, 31),
-    APRIL(Sesons.SPRING, 30),
-    MAY(Sesons.SPRING, 31),
-    JUNE(Sesons.SUMMER, 30),
-    JULY(Sesons.SUMMER, 31),
-    AUGUST(Sesons.SUMMER, 31),
-    SEPTEMBER(Sesons.AUTUMN, 30),
-    OCTOBER(Sesons.AUTUMN, 31),
-    NOVEMBER(Sesons.AUTUMN, 30),
-    DECEMBER(Sesons.WINTER, 31);
+import static ua.lviv.lga.Less12.task02.Sesons.AUTUMN;
+import static ua.lviv.lga.Less12.task02.Sesons.SPRING;
+import static ua.lviv.lga.Less12.task02.Sesons.SUMMER;
+import static ua.lviv.lga.Less12.task02.Sesons.WINTER;
 
-    Sesons seson;
-    int day;
+public enum Months {
+    JANUARY(WINTER, 31),
+    FEBRUARY(WINTER, 28),
+
+    MARCH(SPRING, 31),
+
+    APRIL(SPRING, 30),
+
+    MAY(SPRING, 31),
+
+    JUNE(SUMMER, 30),
+
+    JULY(SUMMER, 31),
+
+    AUGUST(SUMMER, 31),
+
+    SEPTEMBER(AUTUMN, 30),
+
+    OCTOBER(AUTUMN, 31),
+
+    NOVEMBER(AUTUMN, 30),
+
+    DECEMBER(WINTER, 31);
+
+    final Sesons seson;
+    final int day;
 
     Months(Sesons seson, int day) {
         this.seson = seson;
@@ -30,3 +45,6 @@ public enum Months {
         return day;
     }
 }
+
+
+
